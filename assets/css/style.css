@@ -1,0 +1,166 @@
+* {
+	box-sizing: border-box;
+}
+html {
+	font-family: Arial, serif;
+}
+a {
+	text-decoration: none;
+}
+.container {
+	width: 100%;
+	min-height: 100vh;
+	background-image: url(../img/bg1.jpeg);
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	position: absolute;
+	z-index: -10;
+}
+.navbar-list {
+	height: 80vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.navbar-item {
+	list-style: none;
+}
+.navbar-link {
+	text-decoration: none;
+	color: black;
+	font-size: 30px;
+	text-transform: uppercase;
+	font-weight: bolder;
+	padding: 15px 20px;
+	margin: 0 20px;
+}
+.navbar-link:hover {
+	color: magenta;
+	text-decoration: underline;
+	transition: 0.5s;
+}
+.container-block {
+	background-color: #ccc;
+	height: 208px;
+	border: 4px solid black;
+	margin: 30px 0 30px 20px;
+	position: relative;
+	display: inline-block;
+}
+.container-block--sm {
+	width: 208px;
+}
+.container-block--lg {
+	width: 408px;
+}
+.block {
+	width: 100px;
+	height: 100px;
+	position: absolute;
+	color: white;
+	text-align: center;
+}
+.block--1 {
+	background-color: yellowgreen;
+	top: 0;
+	left: 0;
+}
+.block--2 {
+	background-color: black;
+	top: 0;
+	left: 100px;
+}
+.block--3 {
+	background-color: magenta;
+	top: 100px;
+	left: 0;
+}
+.block--4 {
+	background-color: maroon;
+	top: 100px;
+	left: 100px;
+}
+.block--large {
+	background-color: red;
+	width: auto;
+	height: auto;
+	top: 30px;
+	right: 30px;
+	bottom: 30px;
+	left: 30px;
+}
+.block--5 {
+	background-color: blue;
+	bottom: -50px;
+	left: -60px;
+	z-index: -1;
+}
+.block--6 {
+	background-color: blue;
+	bottom: -50px;
+	left: calc(100px + 50px);
+	z-index: 1;
+}
+.block--7 {
+	background-color: blue;
+	bottom: -50px;
+	right: -50px;
+	z-index: -1;
+}
+.navbar__menu {
+	margin: 100px 50px 20px 50px;
+}
+.navbar__menu-list {
+	display: flex;
+	justify-content: space-evenly;
+	padding: 0;
+}
+.navbar__menu-item {
+	list-style: none;
+	flex-basis: 15%;
+}
+.navbar__menu-item-container {
+	text-align: center;
+	margin: 0 auto;
+	transition: 0.3s;
+}
+.navbar__menu-item-container:hover {
+	outline: 2px solid black;
+}
+.navbar__menu-item-container:hover .navbar__menu-item-figcaption {
+	background-color: yellow;
+}
+.navbar__menu-item-container:hover .navbar__menu-link {
+	color: black;
+}
+.navbar__menu-item-figcaption {
+	background-color: aqua;
+	padding: 20px;
+	transition: 0.3s;
+}
+.navbar__menu-link {
+	font-size: 1.25rem;
+	color: magenta;
+	transition: 0.3s;
+}
+.navbar__menu-image {
+	width: 75%;
+	padding: 20px;
+}
+.footer {
+	height: 80px;
+	width: 100%;
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	text-align: center;
+}
+.footer a {
+	font-size: 2em;
+	text-transform: uppercase;
+	color: magenta;
+}
+.footer a:hover {
+	text-decoration: underline;
+}
